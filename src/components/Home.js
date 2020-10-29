@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import { auth, firestore } from '../firebase';
-import { useAuthState } from 'react-firebase-hooks/auth/dist/auth';
-import "firebase/auth";
-import "firebase/firestore";
+import UserContainer from './UserContainer';
 
 function Home() {
-    const [user] = useAuthState(auth);
     return(
+      <div>
       <h1>Home</h1>
+      <UserContainer />
+      </div>
     );
 }
 

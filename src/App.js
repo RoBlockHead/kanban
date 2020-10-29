@@ -18,8 +18,6 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/login" component={Login} />
       </Switch>
-      {user ? <h2>Signed In {user.displayName ? "as " + user.displayName : "Anonymously"}</h2> : <h2>Not signed in</h2>}
-      <AuthStuff />
       
     </BrowserRouter>
   );

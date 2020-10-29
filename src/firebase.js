@@ -1,6 +1,7 @@
 import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAM6np9mIhYkRpkg4jRQKUAfDtv6WA65Qc",
@@ -15,3 +16,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
+
+export const googProv = new firebase.auth.GoogleAuthProvider();
+
+export const githubProv = new firebase.auth.GithubAuthProvider();

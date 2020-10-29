@@ -1,0 +1,7 @@
+.Navbar {
+  display: inline;
+  max-height: 10vh;
+}
+.userIcon img {
+  height: 100%;
+}
